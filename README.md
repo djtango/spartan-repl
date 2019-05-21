@@ -81,3 +81,6 @@ madness?
 ;;=> :THIS-IS-SPARTA!
 ```
 
+
+## Limitations
+* anything preceding the namespace declaration - don't do it :slightly_smiling_face: _what did you expected from a 2 line hack?_
