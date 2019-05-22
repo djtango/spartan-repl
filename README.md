@@ -65,7 +65,7 @@ clojure -A:socket # use the global socket alias which turns on the socket repl
 ```
 * in your repl navigate to the sparta namespace:
 ```clj
-(ns sparta)
+(ns spartan-repl.sparta)
 ```
 * this namespace should be empty, test it via:
 ```clj
