@@ -44,17 +44,17 @@ Save this macro in your VIMRC (optionally bound to `p`) then highlight the expre
 " ^M is return
 " ^] is ESC
 "$HOME/.vimrc
-let @p = 'ygg0"1y3w:new^M"1pa)^M^[p:% ! nc localhost 50505^M'
+let @p = '"1ygg0"2y3w:new^M"2pa)^M^["1p:% ! nc -N localhost 50505^M'
 ```
 
 What this does:  
-* yank the selected code
+* yank the selected code to register 1
 * move to the top of the current file you are in (NOTE: this assumes your ns declaration is on line 1)
-* yank until the end of your namespace name to register 1
+* yank until the end of your namespace name to register 2
 * create a fresh unnamed buffer
 * paste the namespace declaration and close it
 * paste your copied code to be evaluated
-* pipe the entire contents of your buffer to your repl (via ncat on port 50505)
+* pipe the entire contents of your buffer to your repl (via netcat on port 50505)
 
 ## Tying it all together
 * Create a fresh REPL by using either:
