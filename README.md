@@ -54,7 +54,7 @@ What this does:
 * create a fresh unnamed buffer
 * paste the namespace declaration and close it
 * paste your copied code to be evaluated
-* pipe the entire contents of your buffer to your repl (via ncat on port 50505)
+* pipe the entire contents of your buffer to your repl (via netcat on port 50505)
 
 ## Tying it all together
 * Create a fresh REPL by using either:
