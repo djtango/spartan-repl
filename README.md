@@ -44,7 +44,7 @@ Save this macro in your VIMRC (optionally bound to `p`) then highlight the expre
 " ^M is return
 " ^] is ESC
 "$HOME/.vimrc
-let @p = '"1ygg0"2y3w:new^M"2pa)^M^["1p:% ! nc localhost 50505^M'
+let @p = '"1ygg0"2y3w:new^M"2pa)^M^["1p:% ! nc -N localhost 50505^M'
 ```
 
 What this does:  
